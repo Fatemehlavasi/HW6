@@ -1,0 +1,279 @@
+/* font */
+@font-face {
+    font-family: bjpg;
+    src: url(https://use.typekit.net/af/065c26/00000000000000007735a6c8/30/l?subset_id=2&fvd=i5&v=3) format("woff2"), url(https://use.typekit.net/af/065c26/00000000000000007735a6c8/30/d?subset_id=2&fvd=i5&v=3) format("woff"), url(https://use.typekit.net/af/065c26/00000000000000007735a6c8/30/a?subset_id=2&fvd=i5&v=3) format("opentype");
+    font-weight: 500;
+    font-style: italic;
+    font-stretch: normal;
+    font-display: auto;
+}
+
+@font-face {
+    font-family: bjpg;
+    src: url(https://use.typekit.net/af/54d47a/000000000000000000017750/27/l?subset_id=2&fvd=n4&v=3) format("woff2"), url(https://use.typekit.net/af/54d47a/000000000000000000017750/27/d?subset_id=2&fvd=n4&v=3) format("woff"), url(https://use.typekit.net/af/54d47a/000000000000000000017750/27/a?subset_id=2&fvd=n4&v=3) format("opentype");
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    font-display: auto;
+}
+
+@font-face {
+    font-family: bjpg;
+    src: url(https://use.typekit.net/af/ac24c0/00000000000000007735a6c3/30/l?subset_id=2&fvd=n5&v=3) format("woff2"), url(https://use.typekit.net/af/ac24c0/00000000000000007735a6c3/30/d?subset_id=2&fvd=n5&v=3) format("woff"), url(https://use.typekit.net/af/ac24c0/00000000000000007735a6c3/30/a?subset_id=2&fvd=n5&v=3) format("opentype");
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    font-display: auto;
+}
+
+@font-face {
+    font-family: bjpg;
+    src: url(https://use.typekit.net/af/f7ef3a/00000000000000007735a6cd/30/l?subset_id=2&fvd=n6&v=3) format("woff2"), url(https://use.typekit.net/af/f7ef3a/00000000000000007735a6cd/30/d?subset_id=2&fvd=n6&v=3) format("woff"), url(https://use.typekit.net/af/f7ef3a/00000000000000007735a6cd/30/a?subset_id=2&fvd=n6&v=3) format("opentype");
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    font-display: auto;
+}
+
+@font-face {
+    font-family: bjpg;
+    src: url(https://use.typekit.net/af/3e2979/00000000000000007735a6b9/30/l?subset_id=2&fvd=n7&v=3) format("woff2"), url(https://use.typekit.net/af/3e2979/00000000000000007735a6b9/30/d?subset_id=2&fvd=n7&v=3) format("woff"), url(https://use.typekit.net/af/3e2979/00000000000000007735a6b9/30/a?subset_id=2&fvd=n7&v=3) format("opentype");
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    font-display: auto;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:bjpg;
+   
+}
+/* صفحات کلی  */
+.col{
+    width: 98%;
+    background-color: white;
+}
+.container{
+    width: 92%;;
+    display: flex;
+    margin: 0 auto;
+}
+.main {
+    background-color:white;
+    width: 75%;
+    height: 1800px;
+}
+.saidbar{
+    background-color: white;
+    margin-right: 5%;
+    width: 20%;;
+    height: 800px;
+}
+/* main */
+.rite{
+    background-color: rgb(247, 248, 249);
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin-bottom: 0px;
+    padding: 110px 12% 90px;
+}
+.rite p  , .p{
+    color: #597188;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 0px;
+    margin-top: 2.5rem;
+    text-align: center;
+    text-transform: none;
+    font-family:bjpg;
+}
+.p1{
+    font-size: 15px;
+    margin-top: 1.5rem;
+}
+ h1{
+    color: #012B55;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 36px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    text-align: center;
+    text-transform: none;
+    font-family:bjpg;
+}
+/* main , box  */
+ .card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+} 
+.card-box  {
+    height: 18rem;
+    width: 49.77%;
+    position: relative;
+    margin-top: 0.5%;
+}
+
+.card-box:hover .overlay{
+    opacity: 0.9;
+}
+
+.card-box a img{
+    position: absolute;
+    height: 18rem;
+    width:100%;
+    display: block;
+}
+.overlay{
+    background-color: rgb(1, 43, 85);
+    opacity: 0;
+    transition: .5s ease;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height:18rem;
+    width: 100%; 
+}
+.text{
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    font-weight: 500;
+    font-family:bjpg;
+    padding-top: 30px;
+}
+.pa{
+   
+    font-size: 25px;
+    
+  }
+
+/* saidbar  */
+
+.logo{
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    padding: 30px 0;
+    font-family:bjpg;
+}
+.logo a{
+    color: #012B55;
+    text-decoration: none;
+}
+.grop {
+ list-style-type: none;
+ padding: 0;
+ margin:0;
+}
+.grop-item a{
+    padding: 5px 0 ;
+    font-size:1rem;
+    line-height: 30px;
+    text-decoration: none;
+    color: #41576D;
+}
+.grop-item a:active  {
+    color: rgb(1, 43, 85);
+    font-style: normal;
+    font-weight: 600;
+}
+.a{
+    font-size:19px ; 
+    color: #012B55;
+}
+.b{
+    padding-bottom: 1rem;
+}
+
+/* icone */
+
+.so-items a {
+    background-color: #dee3e6;
+    height: 30px;
+    line-height: 28px;
+    width: 30px;
+    border-radius: 15px;
+    text-decoration: none;
+    display: flex;
+    margin-right: 8px;
+    margin-top: 25px;
+}
+.so_item{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+}
+.so_item1{
+    display: flex;
+    list-style-type: none;
+    margin-left: 40.7%;
+    margin-top: 4%;
+}
+
+.contact-grop{
+    padding-top: 1rem;
+     display:flex
+}
+.contact-grop a{
+    font-size:19px ;
+     color: #012B55;
+      text-decoration: none;
+}
+.icons{
+    height: 31px;
+    width: 16px;
+    margin-left: 7.5px;
+}
+.ico{
+    width: 12px;
+    margin-left: 8.5px;
+  }
+
+
+/* fixe */
+
+.back-top-fixed{
+    background-color: #d5dee7;
+    border-radius: 5px;
+    display: block;
+    bottom: 50px;
+    height: 50px;
+    width: 50px;
+    right: 40px;
+    z-index: 3;
+    position: fixed;
+    margin-right: 35px;
+   opacity: 0.5;
+} 
+.back-top-fixed:hover {
+   background-color: #012B55;
+    opacity: 0.3;
+}
+.Arrows{
+    
+    height: 20px;
+    display: block;
+    left: 30%;
+    top: 30%;
+    position: absolute;
+    width: 20px;
+    background: rgba(1, 43, 85, 0.1);
+    cursor: pointer;
+    width: 100%;
+}
+/* .back-top-fixed a svg{
+    transition: fill 0.2s ease;
+} */
+
+
